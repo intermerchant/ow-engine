@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="bfa24658-12c5-45bb-aa15-8f2ffa28a238" name="ramone" url="http://162.254.66.177">
+        <fileTransfer rootFolder="/home/orderwire" accessType="SFTP" host="162.254.66.177" port="22" sshConfigId="5ecdc8ea-1d10-49b6-b55f-0105f15d7398" sshConfig="orderwire@162.254.66.177:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

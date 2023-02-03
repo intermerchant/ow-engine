@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Orderwire Purchase Order Template</title>
+    <style>
+        .invoice-box {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px;
+            border: 1px solid #eee;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+            font-size: 16px;
+            line-height: 24px;
+            font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+            color: #555;
+        }
+
+        .invoice-box td.infomeld-logo{
+            text-align: right;
+        }
+
+        .invoice-box table.outside-frames {
+            width: 100%;
+            line-height: inherit;
+            text-align: left;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .invoice-box table {
+            width: 100%;
+            line-height: inherit;
+            text-align: left;
+            border-collapse: collapse;
+        }
+
+        .invoice-box tr.one {
+            vertical-align: top;
+        }
+
+        .invoice-box table.abc td:nth-child(2) {
+            border: 1px solid grey;
+            text-align: center;
+        }
+
+        .invoice-box td.po-header {
+            font-size: x-large;
+            color: #7b8dc5;
+            text-align: center;
+        }
+
+        .invoice-box table.vendor-ship {
+            width: 390px;
+            line-height: inherit;
+            text-align: left;
+        }
+
+        .invoice-box td.header {
+            background-color: #3B4E87;
+            text-align: left;
+            font-weight: bold;
+            color: white;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-top: 5px;
+        }
+
+
+        .invoice-box table.three-top tr.header {
+            width: 100%;
+            background-color: #3B4E87;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            line-height: inherit;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .invoice-box table.three-top tr.detail {
+            width: 100%;
+            text-align: center;
+            line-height: inherit;
+        }
+
+        .invoice-box table.three-top tr.detail td{
+            text-align: center;
+            line-height: inherit;
+            border: 1px solid black;
+        }
+
+        .invoice-box table.line-item-frame {
+            width: 100%;
+            line-height: inherit;
+            text-align: left;
+        }
+
+        .invoice-box table.line-item-header {
+            width: 100%;
+            line-height: inherit;
+            text-align: center;
+        }
+
+
+        .invoice-box td.li-header {
+            background-color: #3B4E87;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-top: 5px;
+        }
+
+        .invoice-box td.li-header-up-desc {
+            background-color: #3B4E87;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            width: 450px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-top: 5px;
+        }
+        
+        .invoice-box td.li-header-up-tot {
+            background-color: #3B4E87;
+            text-align: center;
+            font-weight: bold;
+            width: 110px;
+            color: white;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-top: 5px;
+        }
+
+        .invoice-box table.po-calculates {
+            width: 230px;
+            line-height: inherit;
+        }
+
+        .invoice-box td.li-detail-left {
+            border: 1px solid black;
+            line-height: inherit;
+            text-align: left;
+            padding-left: 5px;
+        }
+
+        .invoice-box td.li-detail-unit-price {
+            border: 1px solid black;
+            line-height: inherit;
+            text-align: right;
+            width: 110px;
+            padding-right: 5px;
+        }
+
+        .invoice-box td.li-detail-right {
+            border: 1px solid black;
+            line-height: inherit;
+            text-align: right;
+            width: 100px;
+        }
+
+        .invoice-box td.li-detail-right-up-tot {
+            border: 1px solid black;
+            line-height: inherit;
+            text-align: right;
+            width: 110px;
+            padding-right: 5px;
+            background-color: #f2f2f2;
+        }
+
+
+        .invoice-box td.li-detail-center {
+            border: 1px solid black;
+            line-height: inherit;
+            text-align: center;
+        }
+
+        .invoice-box td.label-totals {
+            line-height: inherit;
+            text-align: left;
+            padding-left: 5px;
+        }
+
+        .invoice-box td.totals {
+            background-color: #f2f2f2;
+            border-top: 1px solid black;
+            padding-right: 5px;
+            line-height: inherit;
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="invoice-box">
+        <table class="outside-frames">
+            <tr><td class="po-header">[USPS-PO-HEADER]</td></tr>
+        </table>
+        <table class="outside-frames">
+            <tr class="one">
+                <td>
+                    <table>
+                        <tr><td><img src="data:image/jpg;base64, [SUPPLIER-LOGO]" style="width:100%; max-width:300px; height: 110px;"></td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr><td class="infomeld-logo"><img src="data:image/jpg;base64, [INFOMELD-LOGO]" style="width:100%; max-width:300px; height: 110px;"></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table class="outside-frames">
+            <tr class="one">
+                <td>
+                    <table class="vendor-ship">
+                        <tr><td class="header">Supplier</td></tr>
+                        <tr><td>[SUPPLIER-NAME]</td></tr>
+                        <tr><td>[SUPPLIER-ADDRESS-1]</td></tr>
+                        <tr><td>[SUPPLIER-ADDRESS-2]</td></tr>
+                        <tr><td>[SUPPLIER-CITY-STATE-POSTAL]</td></tr>
+                        <tr><td>[SUPPLIER-TELEPHONE]</td></tr>
+                        <tr><td>[SUPPLIER-FAX]</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr><td>
+                            <table class="abc">
+                                <tr><td style="text-align: right; padding-right: 10px;">DATE</td><td>[PO-DATE]</td></tr>
+                                <tr><td style="text-align: right; padding-right: 10px;">PO #</td><td>[PO-PO-NO]</td></tr>
+                            </table>
+                        </td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table class="outside-frames">
+            <tr class="one">
+                <td>
+                    <table class="vendor-ship">
+                        <tr><td class="header">Ship To</td></tr>
+                        <tr><td>[SHIP-TO]</td></tr>
+                        <tr><td>[SHIP-TO-NAME]</td></tr>
+                        <tr><td>[SHIP-TO-ADDRESS-1]</td></tr>
+                        <tr><td>[SHIP-TO-CITY-STATE-POSTAL]</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="vendor-ship">
+                        <tr><td class="header">Order Contact</td></tr>
+                        <tr><td>[CONTACT-NAME]</td></tr>
+                        <tr><td>[CONTACT-EMAIL]</td></tr>
+                        <tr><td>[CONTACT-AREA-TELEPHONE]</td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table class="outside-frames">
+            <tr>
+                <td>
+                    <table class="vendor-ship">
+                        <tr><td class="header">Order / Requisition</td></tr>
+                        <tr><td>[ORDER-ID]</td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table class="line-item-frame">
+            <tr>
+                <td>
+                    <table class="line-item-header">
+                        <tr>
+                            <td class="li-header">LINE</td>
+                            <td class="li-header">ITEM #</td>
+                            <td class="li-header-up-desc">DESCRIPTION</td>
+                            <td class="li-header">QTY</td>
+                            <td class="li-header">UOM</td>
+                            <td class="li-header-up-tot">UNIT PRICE</td>
+                            <td class="li-header-up-tot">TOTAL</td>
+                        </tr>
+                        [ORDER-DETAIL-TEMPLATE]
+                        [ORDER-FOOTER-TEMPLATE]
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
